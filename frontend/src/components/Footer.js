@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className="container text-center">
                     <span className="text-muted">
                         @{yearNow} Полица Денис <span />
-                        <a href="https://github.com/Denkod9/test_postoffice"
+                        <a href="https://github.com/Denkod9/post-office"
                             target="_blank">
                             GitHub
                         </a>
