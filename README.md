@@ -1,6 +1,6 @@
 # Post_Office
 Проект для Post Office 
-Подробное описание проекта в [Техническое задание на разработку](https://github.com/Denkod9/test_postoffice/blob/master/Docs/technical_requirements.md "ТЗ на разработку")
+Подробное описание проекта в [Техническое задание на разработку](https://github.com/Denkod9/post-office/blob/master/Docs/technical_requirements.md "ТЗ на разработку")
 
 
 

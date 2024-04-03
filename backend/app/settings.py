@@ -22,8 +22,6 @@ CORS_ORIGIN_WHITELIST = (
   'http://localhost:3000',
 )
 
-sudo apt-get install -y git python3-dev python3-venv python3-pip supervisor
-
 
 # Application definition
 
