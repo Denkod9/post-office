@@ -1,0 +1,17 @@
+# Используем официальный образ MySQL
+FROM mysql:5.7
+
+# Установка переменных окружения для MySQL
+ENV MYSQL_ROOT_PASSWORD=Aa1234568
+ENV MYSQL_DATABASE=post_office
+ENV MYSQL_USER=root
+ENV MYSQL_PASSWORD=Aa1234568
+
+# Копирование SQL-скрипта для инициализации базы данных
+COPY ./init.sql /docker-entrypoint-initdb.d/
+
+# Порт для MySQL
+EXPOSE 3306
+
+# Запуск MySQL-сервера при старте контейнера
+CMD ["mysqld"]

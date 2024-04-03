@@ -1,0 +1,17 @@
+# Используем официальный образ Node.js
+FROM node:14 AS frontend
+
+# Устанавливаем рабочую директорию внутри контейнера
+WORKDIR /app/frontend
+
+# Копируем package.json и package-lock.json в контейнер
+COPY frontend/package.json frontend/package-lock.json ./
+
+# Устанавливаем зависимости
+RUN npm install
+
+# Копируем все остальные файлы в контейнер
+COPY frontend/ .
+
+# Команда для сборки React приложения
+CMD ["npm", "run", "build"]
